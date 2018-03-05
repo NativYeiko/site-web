@@ -206,21 +206,20 @@ i {
   width: auto;
   margin-right: 20px;
 }
-.col-photo:first-child div{
-  display: inline-block;
-  margin: 25%;
-  width: auto;
-  padding-top: 3%;
+h3{
+  font-size: 120%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.icone-small{
+  color: red;
+  margin-right: 10px;
+  font-size: 120%;
+}
+.col-md-3 img{
+  width: 105%;
 
 }
-.col-texte:last-child{
-  padding-top: 3%;
-
-}
-.col-photo-1{
-  height: 5%;
-  width: 5%;
-  padding:inherit;
-  margin: 30px;
-  display: inline-block;
+.col-md-3{
+  text-align: center;
 }

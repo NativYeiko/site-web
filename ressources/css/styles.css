@@ -1,0 +1,322 @@
+css /*----------------genral----------------*/
+html {
+  background: #2f3542;                               /* couleur de fond */
+  font-family:  ‘Lato’,‘Arial’, sans-serif;       /* police de caractère */
+  font-weight : 300;                              /* épaisseur de la police */
+  font-size: 20px;                                /* taille de la police */
+  color: #555;                                    /* couleur de la police */
+  text-rendering: optimizeLegibility;             /*  /// Voir PDF */
+}
+
+header {
+background-image: linear-gradient(rgba(153, 218, 40, 0.5), rgba(49, 255, 81, 0.5)), url(img/onepunch.jpg); /* Ajout background et filtre */
+height: 100vh;
+background-size: cover;
+background-position: center;
+
+}
+/*section*/
+section{
+ padding:  85px 0;
+}
+h2{
+ text-align: center;
+ font-size: 180%;
+ word-spacing: 10px;
+ letter-spacing: 1px;
+ margin-bottom: 20px;
+}
+h2::after{
+ display: block;
+ height: 2px;
+ width:100px;
+ background-color: #e67e22;
+ margin: 0 auto;
+ margin-top: 15px;
+ content:""
+}
+h2::before{
+ content:""
+}
+.long-copy{
+ line-height: 145%;
+ width: 70%;
+ margin-left: 15%;
+}
+.row {
+ max-width: 1140px;
+ margin: 0 auto;
+}
+.manga-text-box {
+ position: absolute;  /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
+ top:50%;
+ left:50%;
+ transform: translate(-50%,-50%);  /* Elle permet d’effectuer une translation (un déplacement) de l’élément sur les axes X et Y. /// Voir PDF */
+ width: 1140px;
+}
+/*---------bouton-------*/
+.btn{
+ padding:  10px  30px;
+ border: 1px  solid #fff;
+ boder-radius: 50px;
+ font-weight: 100;
+}
+.btn-hover{
+ border: 1px solid pink;
+}
+.btn-full{
+ background-color: red;
+ color:pink
+}
+.btn-ghost{
+ color: pink;
+}
+.btn-ghost:hover{
+ background-color: black;
+}
+/*----------bouton fin------*/
+
+
+/*-------logo------*/
+.logo1{
+ height: 100px;
+ float: left;
+ margin-top: 30px;
+}
+/*-------menu navigation------*/
+.main-nav{
+ list-style: none;
+ float: right;
+ margin-top: 30px;
+}
+.main-nav li{
+display: inline-block;
+margin-left: 40px;
+text-transform: uppercase;
+}
+.main-nav li  a{
+ text-decoration: none;
+ color: #fff;
+ font-size: 90%;
+}
+/*-------bootstrap icone------*/
+.col-md-3{
+text-align: left;
+}
+.ion-android-star{
+ color: red;
+}
+.ion-android-folder-open{
+ color:  green;
+}
+.deco{
+ text-align: center;
+}
+.range-photo {
+ list-style: none;
+ width: 100%;
+}
+.range-photo li{
+ display: block;
+ float: left;
+ width: 25%;
+}
+.photo{
+ width: auto;
+ overflow: hidden;
+ background-color: black;
+}
+.photo img{
+ opacity: 0.4;
+ width: 100%;
+ transform: scale(1.5);
+ transition: transform 2s,opacity 2s;
+}
+.photo img:hover{
+ opacity: 1;
+ transform: scale(1)
+}
+/*mobile*/
+.col-mobile{
+ margin-top: 30px;
+}
+.col-mobile:first-child{
+text-align: right;
+padding-right: 3%;
+}
+.col-mobile:last-child{
+padding-left: 3%;
+}
+.iphone{
+ width: 40%;
+}
+.service-mobile div{
+ text-align: center;
+ border: 2px solid orange;
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+ float: left;
+ margin-right: 25px;
+ font-size: 150%;
+ }
+.service-mobile{
+ margin-bottom: 50px;
+}
+.btn-a img{
+ height: 50px;
+ width: auto;
+ margin-right: 10px;
+}
+.col-md-3 img{
+ width: 105%;
+}
+h3{
+ font-size: 120%;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+}
+.icon-small{
+ color: orange;
+ margin-right: 10px;
+ font-size: 120%;
+}
+.city{
+   background: linear-gradient(to right, #add100, #7b920a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@@ -223,3 +223,79 @@ h3{
+.col-md-3{
+  text-align: center;
+}
+blockquote{
+  font-style: italic;
+  font-size: auto;
+  margin-top: 40px;
+  line-height: normal;
+  display: block;
+}
+blockquote::before{
+  content:"/201C";
+  font-size: auto;
+  display: block;
+}
+
+cite{
+  font-size: 90%;
+  margin-top:auto;
+  display: block;
+}
+cite img{
+  height: 45px;
+  border-radius: 20px;
+
+}
+.tableau-prix{
+  background-color: white;
+}
+.box-prix{
+  background-color: green;
+  box-shadow: 20px 20px 0 #efefef;
+  padding: 15px;
+}
+.box-prix div{
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}
+.box-prix div:first-child{
+  background-color: grey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.box-prix div:last-child{
+  text-align: center;
+}
+.box-prix ul{
+  list-style: none;
+}
+.price{
+  font-size: 300%;
+  color: orange;
+  font-weight: 100
+}
+.price span{
+  font-size: 80%;
+}
+.price-mouth{
+  font-size: 80%;
+}
+.sec-formulaire{
+  background-color: #blue;
+}
+.formulaire{
+  background-color: black;
+  text-decoration-color: white;
+}
+.font-formulaire{
+  margin-top: 1em;
+}
+.tableau-formulaire{
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  form {
+      /* Pour le centrer dans la page */
+      margin: 0 auto;
+      width: 400px;
+      /* Pour voir les limites du formulaire */
+      padding: 1em;
+      border: 1px solid #CCC;
+      border-radius: 1em;
+  }
+  form div + div {
+    margin-top: 1em;
+}
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+.button {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 90px; /* même dimension que les étiquettes */
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: .5em;
+}

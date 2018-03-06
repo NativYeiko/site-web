@@ -223,3 +223,79 @@ h3{
 .col-md-3{
   text-align: center;
 }
+blockquote{
+  font-style: italic;
+  font-size: auto;
+  margin-top: 40px;
+  line-height: normal;
+  display: block;
+}
+blockquote::before{
+  content:"/201C";
+  font-size: auto;
+  display: block;
+}
+
+cite{
+  font-size: 90%;
+  margin-top:auto;
+  display: block;
+}
+cite img{
+  height: 45px;
+  border-radius: 20px;
+
+}
+.tableau-prix{
+  background-color: white;
+}
+.box-prix{
+  background-color: green;
+  box-shadow: 20px 20px 0 #efefef;
+  padding: 15px;
+}
+.box-prix div{
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}
+.box-prix div:first-child{
+  background-color: grey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.box-prix div:last-child{
+  text-align: center;
+}
+.box-prix ul{
+  list-style: none;
+}
+.price{
+  font-size: 300%;
+  color: orange;
+  font-weight: 100
+}
+.price span{
+  font-size: 80%;
+}
+.price-mouth{
+  font-size: 80%;
+}
+.sec-formulaire{
+  background-color: #blue;
+}
+.formulaire{
+  background-color: black;
+  text-decoration-color: white;
+}
+.font-formulaire{
+  margin-top: 1em;
+}
+.tableau-formulaire{
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}

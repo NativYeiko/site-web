@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="ressources/css/styles.css"/>
+</head>
+<body>
+  <div>
+    <section class="sec-formulaire">
+      <div>
+        <h2>Notre Formulaire de contact</h2>
+      </div class="formulaire">
+      <div class="font-formulaire">
+        <form class="tableau-formulaire" method="post">
+          <div>
+            <label for="Nom">Nom :</label>
+            <input type="text" name="Nom" id="Nom" placeholder="Ex : Votre nom" size="30" maxlength="25" required/>
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input type="text" name="email" id="email" placeholder="Ex : Votre email" size="30" maxlength="40" required/>
+            <div>
+              <label for="Qui souhaiter vous contacter">Qui souhaiter vous contacter :</label>
+              <!---  <input type="text" name="Qui souhaiter vous contacter" id="Qui souhaiter vous contacter" placeholder="Ex : service-mobile" size="30" maxlength="10"/> -->
+              <select name="choix" required>
+                <option value="Mobile" >service-mobile</option>
+                <option value="Webmail">service-web</option>
+                <option value="informatique" >Service informatique</option>
+                <option value="Cafe" selected>Service Cafe</option>
+                <option value="Pause" >Service Pause</option>
+              </select>
+            </div>
+            <div>
+              <label for="Voulez vous recevoir notre newletter">Voulez vous recevoir notre newletter :</label>
+              <!--- <input type="text" name="Voulez vous recevoir notre newletter" id="Voulez vous recevoir notre newletter" placeholder="" size="30" maxlength="10"/>  -->
+              <input type="radio" id="jojo" checked>Oui je m'abonne
+            </div>
+            <div>
+              <label for="Rediger votre message"required>Rediger votre message :</label>
+              <input type="text" name="Rediger votre message" id="Rediger votre message" placeholder="Rediger votre message max 150 caractere" size="50" maxlength="150"required/>
+            </div>
+            <div class="button">
+              <button type="submit">Envoyer votre message</button>
+              <button type="reset">Je suis couillon j'ai merder</button>
+            </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

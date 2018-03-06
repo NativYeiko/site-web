@@ -1,11 +1,32 @@
-html{
-
+#rocket_dummy{
+    position:absolute; left:-100px; top:20px;
+    width:55px; height:55px;
+    background:blue;
 }
-body {
-  background-color: blue;
-  background-image: url(../img/5.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  margin: auto;
-  padding: 0;
+#rocket_mobile{
+    position:absolute; top:0; margin:85px 0 0 -4px;
+    width:60px; height:185px;
+    background:rgba(255,0,0,0.5);
+}
+#rocket_mobile.fixed{position:fixed; top:0;}
+
+#rocket_dock{
+    position:absolute; width:28px; height:28px; top:164px; left:12px;
+    background:#555;
+}
+
+#rocket_mobile .rocket_body{
+    position:absolute; width:60px; height:60px; top:63px; left:0;
+    background:rgba(246,168,0,0.9);
+}
+
+#rocket_mobile .fire{
+    position:absolute; width:35px; height:74px;
+    background:rgba(100,245,0,0.7);
+}
+#rocket_mobile .fire.top{
+    left:13px; top:7px;
+}
+#rocket_mobile .fire.bottom{
+    left:13px; top:104px;
 }

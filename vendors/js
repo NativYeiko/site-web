@@ -1,0 +1,30 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+/**
+ * Animation de la fusée avec Javascript
+**/
+jQuery(document).ready(function($){
+    // Stockage des références des différents éléments dans des variables
+    rocket     = $('#rocket_mobile');
+    firetop    = $('#rocket_mobile .fire.top');
+    firebottom = $('#rocket_mobile .fire.bottom');
+
+    // Calcul de la marge entre le haut du document et #rocket_mobile
+    fixedLimit = rocket.offset().top - parseFloat(rocket.css('marginTop').replace(/auto/,0));
+
+    // On déclenche un événement scroll pour mettre à jour le positionnement au chargement de la page
+    $(window).trigger('scroll');
+
+    $(window).scroll(function(event){
+        // Valeur de défilement lors du chargement de la page
+        windowScroll = $(window).scrollTop();
+
+        // Mise à jour du positionnement en fonction du scroll
+        if( windowScroll >= fixedLimit ){
+            rocket.addClass('fixed');
+        } else {
+            rocket.removeClass('fixed');
+        }
+    });
+});
+</script>
